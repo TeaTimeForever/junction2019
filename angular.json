@@ -117,8 +117,13 @@
               "devServerTarget": "junction2019:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "junction2019"
 }

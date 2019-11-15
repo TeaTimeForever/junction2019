@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "junction2019-41c43"
+  },
+  "targets": {
+    "junction2019-41c43": {
+      "hosting": {
+        "junction2019": [
+          "junction2019-41c43"
+        ]
+      }
+    }
+  }
+}
