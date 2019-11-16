@@ -1,0 +1,22 @@
+.anxiety, .trainings {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  
+  p {
+    margin: 1em;
+  }
+}
+.illustration {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  img {
+    max-width: 70px;;
+  }
+}
+
+.calm {
+  width: 100%;
+}
