@@ -14,17 +14,20 @@ import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
-import {MatListModule} from '@angular/material/list';
+import { MatListModule } from '@angular/material/list';
+import { MatExpansionModule } from '@angular/material/expansion';
 
 import { WelcomeComponent } from './welcome/welcome.component';
 import { NoComponent } from './no/no.component';
+import { MyChallengesComponent } from './my-challenges/my-challenges.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     WelcomeComponent,
-    NoComponent
+    NoComponent,
+    MyChallengesComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +44,8 @@ import { NoComponent } from './no/no.component';
     // Material
     MatToolbarModule,
     MatButtonModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
