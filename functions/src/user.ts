@@ -13,4 +13,5 @@ export interface UserChallenge {
 export interface Challenge {
   imgUrl: string;
   question: string;
+  id: string;
 }

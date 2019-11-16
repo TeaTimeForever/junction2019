@@ -25,13 +25,15 @@ export const getChallenge = functions.https.onRequest(async (request, response) 
     const responseToSend: Challenge = !nextChallengeDoc ? 
       {
         imgUrl: 'hello', // TODO: Add a success image here
-        question: `Congrats - You've finished all the challenges in this training. Choose the next training in the app`
+        question: `Congrats - You've finished all the challenges in this training. Choose the next training in the app`,
+        id: 'congrats'
       } :
       ((): Challenge => {
         const {imgUrl, question} = nextChallengeDoc.data();
         return {
           imgUrl,
-          question
+          question,
+          id: nextChallengeDoc.id
         };
       })()
 
