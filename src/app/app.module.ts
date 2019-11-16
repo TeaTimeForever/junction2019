@@ -17,12 +17,14 @@ import { MatButtonModule } from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 
 import { WelcomeComponent } from './welcome/welcome.component';
+import { NoComponent } from './no/no.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    NoComponent
   ],
   imports: [
     BrowserModule,
