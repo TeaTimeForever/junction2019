@@ -1,4 +1,4 @@
-import { Timestamp } from '@google-cloud/firestore';
+import { firestore } from 'firebase/app';
 
 export interface User {
   activeChallenge: string;
@@ -6,8 +6,8 @@ export interface User {
 
 export interface UserChallenge {
   status: 'accepted' | 'rejected' | 'done';
-  started_at: Timestamp;
-  finished_at: Timestamp;
+  started_at: firestore.Timestamp;
+  finished_at: firestore.Timestamp;
 }
 
 export interface Challenge {

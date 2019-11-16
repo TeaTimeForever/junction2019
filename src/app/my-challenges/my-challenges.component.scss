@@ -1,0 +1,25 @@
+.card-content {
+  display: flex;
+  justify-content: space-around;
+  max-height: 100px;
+  img {
+    object-fit: contain;
+    max-width: 100px;
+  }
+}
+.mat-expansion-panel-header {
+  background-color: #87E1E43F;
+}
+
+.content::after {
+  content: "";
+  background: url('../../assets/tiles/polkaYellow.jpg');
+  background-size: contain;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
