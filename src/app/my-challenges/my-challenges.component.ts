@@ -45,26 +45,5 @@ export class MyChallengesComponent {
 
   constructor(private afs: AngularFirestore) { }
 
-  /*
-  challenges = [{
-    status: 'active',
-    question: 'Lorem ipsum dolor sit amet ipsum dolor sit amet',
-    title: 'Lalal alala',
-    imageUrl: 'https://d3ursa3zzwkanm.cloudfront.net/assets/custom_domains/procter_gamble/pg_challenge_step_5-4d8cc984e7cd82bc87c0b0767437cc290e87b3d617f2c8d2ff0edd79f1947e25.png'
-  }, {
-    status: 'rejected',
-    question: 'Lorem ipsum dolor sit amet ipsum dolor sit amet',
-    title: 'Lalal alala',
-    imageUrl: 'https://d3ursa3zzwkanm.cloudfront.net/assets/custom_domains/procter_gamble/pg_challenge_step_5-4d8cc984e7cd82bc87c0b0767437cc290e87b3d617f2c8d2ff0edd79f1947e25.png'
-  }, {
-    status: 'done',
-    started_at: new Date(),
-    finished_at: new Date(),
-    question: 'Lorem ipsum dolor sit amet ipsum dolor sit amet',
-    title: 'Lalal alala',
-    imageUrl: 'https://d3ursa3zzwkanm.cloudfront.net/assets/custom_domains/procter_gamble/pg_challenge_step_5-4d8cc984e7cd82bc87c0b0767437cc290e87b3d617f2c8d2ff0edd79f1947e25.png'
-  }];
-  */
-
   activeChallenge = 0;
 }

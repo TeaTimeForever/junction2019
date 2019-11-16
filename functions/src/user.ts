@@ -14,4 +14,5 @@ export interface Challenge {
   imgUrl: string;
   question: string;
   id: string;
+  tags?: string[];
 }
