@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { trainingMock } from '../model/trainings';
+
 
 @Component({
   selector: 'app-welcome',
@@ -18,11 +20,13 @@ import { Component, OnInit } from '@angular/core';
     <img *ngFor="let img of relaxImgs"
          [src]="'./assets/relax/'+img +'.svg'" [alt]="img">
   </div>
-  <mat-selection-list #shoes>
-    <mat-list-option *ngFor="let shoe of typesOfShoes">
-      {{shoe}}
-    </mat-list-option>
-  </mat-selection-list>
+  <p>Day-to-day problems affect important aspects of your life, like relationships and work, can have a big impact on your mental health. When they don’t go away, or get bigger, the emotions they cause can overwhelm you.</p>
+  <mat-list #trainings>
+    <mat-list-item *ngFor="let training of trainigns">
+      <a [routerLink]="training.slug">{{training.name}}</a>
+
+    </mat-list-item>
+  </mat-list>
 </div>
 <img class="calm" src="./assets/calm.jpg">
   `,
@@ -32,7 +36,10 @@ export class WelcomeComponent implements OnInit {
 
   disorderImgs = ['Apathy', 'Antisocial Personality Disorder', 'Shaking'];
   relaxImgs = ['Art Therapy', 'Breathe Deeply', 'Take a Walk', 'Have a Warm Drink', 'Laugh Out Loud'];
-  constructor() { }
+  trainigns = trainingMock;
+  constructor() {
+    console.log(this.trainigns);
+  }
 
   ngOnInit() {
   }

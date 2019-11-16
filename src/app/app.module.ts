@@ -14,6 +14,8 @@ import { HeaderComponent } from './header/header.component';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import {MatListModule} from '@angular/material/list';
+
 import { WelcomeComponent } from './welcome/welcome.component';
 
 @NgModule({
@@ -36,7 +38,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
 
     // Material
     MatToolbarModule,
-    MatButtonModule
+    MatButtonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
