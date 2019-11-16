@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "lib": ["esnext", "dom"],
+    "sourceMap": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "target": "es5",
+    "moduleResolution": "node"
+  },
+  "tslint": {
+    "configFile": "tslint.json"
+  }
+}

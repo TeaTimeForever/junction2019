@@ -1,0 +1,6 @@
+/* @import './fonts/faces.css'; */
+
+#c {
+    border: solid 1px darkorange;
+    image-rendering: pixelated;
+}
