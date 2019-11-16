@@ -10,20 +10,28 @@ import { AngularFireAuthGuardModule } from '@angular/fire/auth-guard';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from 'src/environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+
+    // Firebase
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
     AngularFireStorageModule,
     AngularFireAuthGuardModule,
-    BrowserAnimationsModule,
+
+    // Material
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
