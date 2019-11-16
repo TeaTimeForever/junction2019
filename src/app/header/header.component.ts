@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <mat-toolbar>
     <mat-toolbar-row class="header">
-      <span routerLink="">Upbeat</span>
+      <span class="logo" routerLink="">Upbeat</span>
       <button mat-button class="accent" routerLink="myChallenges">Login</button>
     </mat-toolbar-row>
   </mat-toolbar>
