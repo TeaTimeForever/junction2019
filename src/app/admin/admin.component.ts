@@ -10,7 +10,10 @@ import { Challenge } from 'functions/src/user';
     <mat-expansion-panel class="firstLine" hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            <button mat-button color="primary">Add new challenge</button>
+            <button mat-button color="primary">
+              <mat-icon aria-hidden="false" aria-label="Add">add_circle_outline</mat-icon>
+              Add new challenge
+            </button>
           </mat-panel-title>
         </mat-expansion-panel-header>
         <div class="formContainer">
@@ -33,13 +36,15 @@ import { Challenge } from 'functions/src/user';
       <mat-expansion-panel hideToggle>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            {{challenge.title}}
+            <h4>{{challenge.title}}</h4>
           </mat-panel-title>
           <mat-panel-description>
-          <mat-chip-list aria-label="Fish selection">
-            <mat-chip *ngFor="let tag of challenge.tags"
-                      [color]="tag === 'popular'? 'primary' : 'accent'" selected>{{tag}}</mat-chip>
-          </mat-chip-list>
+            <mat-chip-list aria-label="Fish selection">
+              <mat-chip *ngFor="let tag of challenge.tags"
+                        [color]="(tag === 'popular'? 'primary' : 'accent')" selected>{{tag}}
+              </mat-chip>
+            </mat-chip-list>
+            <mat-icon aria-hidden="false" aria-label="Edit">edit</mat-icon>
           </mat-panel-description>
         </mat-expansion-panel-header>
         <div class="card-content">

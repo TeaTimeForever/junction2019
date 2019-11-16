@@ -19,6 +19,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
 
 import { environment } from 'src/environments/environment';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -55,7 +56,8 @@ import { HeaderComponent } from './header/header.component';
     MatListModule,
     MatExpansionModule,
     MatChipsModule,
-    MatInputModule
+    MatInputModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

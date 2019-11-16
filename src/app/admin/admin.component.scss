@@ -31,3 +31,9 @@
   position: absolute;
   z-index: -1;   
 }
+
+.mat-expansion-panel-header-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
