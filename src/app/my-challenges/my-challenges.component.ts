@@ -3,24 +3,26 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-my-challenges',
   template: `
-<mat-accordion>
-  <div *ngFor="let challenge of challenges; let i = index;">
-    <mat-expansion-panel [expanded]="i === activeChallenge" (opened)="activeChallenge = i" hideToggle>
-      <mat-expansion-panel-header>
-        <mat-panel-title>
-          {{challenge.title}}
-        </mat-panel-title>
-        <mat-panel-description>
-        {{challenge.status}}
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <div class="card-content">
-        <p>{{challenge.question}}</p>
-        <img [src]="challenge.imageUrl" alt="">
-      </div>
-    </mat-expansion-panel>
-  </div>
-</mat-accordion>
+<div class="content">
+  <mat-accordion>
+    <div *ngFor="let challenge of challenges; let i = index;">
+      <mat-expansion-panel [expanded]="i === activeChallenge" (opened)="activeChallenge = i" hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{challenge.title}}
+          </mat-panel-title>
+          <mat-panel-description>
+          {{challenge.status}}
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="card-content">
+          <p>{{challenge.question}}</p>
+          <img [src]="challenge.imageUrl" alt="">
+        </div>
+      </mat-expansion-panel>
+    </div>
+  </mat-accordion>
+</div>
   `,
   styleUrls: ['./my-challenges.component.scss']
 })
