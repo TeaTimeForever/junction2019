@@ -1,6 +1,6 @@
 import * as functions from 'firebase-functions';
 import * as  admin from 'firebase-admin';
-import { UserChallenge } from './user';
+import { UserChallenge, Challenge } from './user';
 import { DocumentData } from '@google-cloud/firestore';
 
 admin.initializeApp();
@@ -13,38 +13,28 @@ export const getChallenge = functions.https.onRequest(async (request, response) 
 
   const userSn = await db.doc(`users/${uid}`).get();
   if (!userSn.exists) {
-    response.statusCode = 404;
-    response.send();
+    response.status(404).send('User not found');
   } else {
-    const userChallengesSn = await db.collection(`users/${uid}/challenges`).get();
+    const doneChallenges = (await db.collection(`users/${uid}/challenges`).where('status', '==', 'accepted').get())
+      .docs.map(snapshot => snapshot.id);
 
-    const alreadyChanllenged: string[] = [];
-    if (!userChallengesSn.empty) {
-      userChallengesSn.docs.forEach(userChSn => {
-        alreadyChanllenged.push(userChSn.id);
-      });
-    }
-
-    let res: DocumentData | null = null;
     const allChallengesSn = (await db.collection(`gettingToNo/general/challenges`).get()).docs;
-    allChallengesSn.forEach(async challengeSn => {
-      if (!alreadyChanllenged.includes(challengeSn.id) && !res) {
-        res = challengeSn.data();
-        userSn.ref.set({activeChallenge: challengeSn.id});
-      }
-    });
 
-    if (!res) {
-      userChallengesSn.forEach(userChSn => {
-        if (!res) {
-          const userCh = userChSn.data() as UserChallenge;
-          if (userCh.status === 'accepted') {
-            console.log('not implemented yet')
-          }
-        }
-      });
-    }
+    const nextChallengeDoc = allChallengesSn.sort(() => Math.random() - 0.5).find(doc => !doneChallenges.includes(doc.id))
+    
+    const responseToSend: Challenge = !nextChallengeDoc ? 
+      {
+        imgUrl: 'hello', // TODO: Add a success image here
+        question: `Congrats - You've finished all the challenges in this training. Choose the next training in the app`
+      } :
+      ((): Challenge => {
+        const {imgUrl, question} = nextChallengeDoc.data();
+        return {
+          imgUrl,
+          question
+        };
+      })()
 
-    response.send(JSON.stringify(res));
+    response.send(responseToSend);
   }
  });
