@@ -1,0 +1,35 @@
+{
+  "name": "e-ink-display-server",
+  "version": "1.0.0",
+  "description": "The server that would be rendering a new image every day so that it can be downloaded on the e-ink display",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "watch": "parcel -p 3000 watch src/public/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint 'src/**/*.ts'",
+    "fix": "tslint --fix 'src/**/*.ts'",
+    "tsc": "tsc -p tsconfig.json --noEmit"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/luxon": "^1.11.1",
+    "@types/suncalc": "^1.8.0",
+    "axios": "^0.18.0",
+    "floyd-steinberg": "^1.0.5",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.6",
+    "koa-mount": "^4.0.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "luxon": "^1.11.3",
+    "puppeteer": "^1.11.0",
+    "suncalc": "^1.8.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "tslint": "^5.13.0",
+    "typescript": "^3.3.1"
+  }
+}
