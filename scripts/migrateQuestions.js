@@ -6,23 +6,23 @@ admin.initializeApp({
 });
 
 const data = require("./upbeat-data.json");
-const collectionKey = "challenges"; //name of the collection
+// const collectionKey = "challenges"; //name of the collection
 
 const firestore = admin.firestore();
 
 if (data && (typeof data === "object")) {
   data.forEach(doc => {
-    if(doc.fields.object_repr) {
-       firestore.collection('gettingToNo/general/challenges')
-       .add({
-         question: doc.fields.object_repr,
-         imgUrl: 'https://d3ursa3zzwkanm.cloudfront.net/assets/custom_domains/procter_gamble/pg_challenge_step_5-4d8cc984e7cd82bc87c0b0767437cc290e87b3d617f2c8d2ff0edd79f1947e25.png'
-       }).then((res) => {
-          console.log("Finished: " + doc.fields.object_repr);
-      }).catch((error) => {
-         console.error("Error writing document: ", error);
-      });
-    }
+    console.log(doc);
+     firestore.collection('gettingToNo/general/challenges')
+     .add({
+       question: doc.fields.challenge_text,
+       imgUrl: doc.fields.image_url,
+       title: doc.fields.short_text
+     }).then((res) => {
+        console.log("Finished: " + doc);
+    }).catch((error) => {
+       console.error("Error writing document: ", error);
+    });
   console.log();
 });
 }
