@@ -1,0 +1,152 @@
+[
+{
+  "model": "gettingtono.challenge",
+  "pk": 1,
+  "fields": {
+    "challenge_text": "Go to a restaurant, order and eat dessert first",
+    "short_text": "Early Dessert",
+    "image_url": "https://www.jing.fm/clipimg/detail/178-1789389_triple-layer-3-layer-cake-cartoon.png",
+    "pub_date": "2019-11-16T17:12:26.566Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 2,
+  "fields": {
+    "challenge_text": "Have a dance off in front of your mirror",
+    "short_text": "Dance!",
+    "image_url": "https://www.jing.fm/clipimg/detail/138-1380814_bharatanatyam-dancing-cartoon.png",
+    "pub_date": "2019-11-16T17:12:38.733Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 3,
+  "fields": {
+    "challenge_text": "Make a new recipe you've never tried before",
+    "short_text": "short desc",
+    "image_url": "https://www.iloveorganicgirl.com/wp-content/uploads/2015/12/knife-board.svg",
+    "pub_date": "2019-11-16T17:12:55.728Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 4,
+  "fields": {
+    "challenge_text": "Buy lunch for a homeless person",
+    "short_text": "Buy lunch",
+    "image_url": "https://2o8bo52prx9a2jtipr1gu5b4-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/yellow-lunch-box-500.jpg",
+    "pub_date": "2019-11-16T20:22:55.387Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 5,
+  "fields": {
+    "challenge_text": "Say no to something you don\u2019t like to do, but often do out of guilt.",
+    "short_text": "Now it's No",
+    "image_url": "https://miro.medium.com/max/1200/0*PAfjr1PeQlGhCIab",
+    "pub_date": "2019-11-16T20:25:39.261Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 6,
+  "fields": {
+    "challenge_text": "Hug a stranger",
+    "short_text": "Hug",
+    "image_url": "https://p7.hiclipart.com/preview/389/25/187/emoji-hug-emoticon-emoji-face-png-transparent-image.jpg",
+    "pub_date": "2019-11-16T20:27:20.991Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 7,
+  "fields": {
+    "challenge_text": "Join somebody for lunch that you have never met before",
+    "short_text": "Unlonely Lunch",
+    "image_url": "https://cdn.pixabay.com/photo/2018/05/21/12/37/food-3418138_1280.png",
+    "pub_date": "2019-11-16T20:29:41.342Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 8,
+  "fields": {
+    "challenge_text": "Buy colouring books, your favourite ice-cream, and invite the funniest person you know over",
+    "short_text": "Party like a Kid",
+    "image_url": "http://www.colourfulconcepts.com.au/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/f/o/food_yellow_cover_std.jpg",
+    "pub_date": "2019-11-16T20:33:53.781Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 9,
+  "fields": {
+    "challenge_text": "Ask for a Raise",
+    "short_text": "Money Matters",
+    "image_url": "https://banner2.cleanpng.com/20180210/jre/kisspng-investment-chart-stock-illustration-illustration-yellow-up-arrow-5a7e843c0ab9a5.8999202315182408280439.jpg",
+    "pub_date": "2019-11-16T20:35:45.468Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 10,
+  "fields": {
+    "challenge_text": "Rent a tandem bike with a friend",
+    "short_text": "Two on a Bike",
+    "image_url": "https://banner2.cleanpng.com/20180425/auw/kisspng-san-francisco-tandem-bicycle-bike-rental-bike-frid-tandem-bicycle-5ae01d529087b0.395836701524637010592.jpg",
+    "pub_date": "2019-11-16T20:40:14.775Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 11,
+  "fields": {
+    "challenge_text": "Give someone flowers for no reason",
+    "short_text": "Free Flowers",
+    "image_url": "http://buckwheat33.tripod.com/flowers/2.jpg",
+    "pub_date": "2019-11-16T20:42:06.715Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 12,
+  "fields": {
+    "challenge_text": "Organise a pillow fight with some friends",
+    "short_text": "Pillow Fight",
+    "image_url": "https://ae01.alicdn.com/kf/HTB1my.MTNTpK1RjSZR0q6zEwXXat/Yellow-Cushion-Cover-30x50cm-Cushion-Home-Cafe-Decoration-Pillowcase-Cartoon-Small-Fresh-Style-Yellow-Polyester-Pillowcase.jpg_q50.jpg",
+    "pub_date": "2019-11-16T20:43:46.282Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 13,
+  "fields": {
+    "challenge_text": "Go somewhere you shouldn't be",
+    "short_text": "Door was Open",
+    "image_url": "https://www.jing.fm/clipimg/detail/162-1623775_cinta-police-keep-out-polica-parallel.png",
+    "pub_date": "2019-11-16T20:46:47.647Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 14,
+  "fields": {
+    "challenge_text": "Ask if you can make a test drive in a colleague's car",
+    "short_text": "Test Drive",
+    "image_url": "https://sep.yimg.com/ca/I/extextoys_2267_13015757",
+    "pub_date": "2019-11-16T20:51:10.939Z"
+  }
+},
+{
+  "model": "gettingtono.challenge",
+  "pk": 15,
+  "fields": {
+    "challenge_text": "Ask a friend to sing a karaoke duet with you",
+    "short_text": "Karaoke Duet",
+    "image_url": "https://i7.pngguru.com/preview/940/294/415/chicken-chinese-zodiac-cartoon-sing-k-chick.jpg",
+    "pub_date": "2019-11-16T20:56:10.770Z"
+  }
+}
+]
