@@ -5,7 +5,7 @@ export interface User {
 }
 
 export interface UserChallenge {
-  status: 'accepted' | 'rejected' | 'done' | 'notStarted';
+  status: 'accepted' | 'rejected' | 'done' | 'offered';
   started_at?: firestore.Timestamp;
   finished_at?: firestore.Timestamp;
 }

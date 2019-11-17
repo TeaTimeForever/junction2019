@@ -12,3 +12,18 @@
 .example-radio-button {
   margin: 5px;
 }
+.content {
+  margin: 1em;
+}
+.content::after {
+  content: "";
+  background: url('../../assets/tiles/polkaYellow.jpg');
+  background-size: contain;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}

@@ -21,6 +21,7 @@ import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatRadioModule } from '@angular/material/radio';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 import { environment } from 'src/environments/environment';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -64,7 +65,8 @@ import { TrainingConfigurationComponent } from './training-configuration/trainin
     MatChipsModule,
     MatInputModule,
     MatIconModule,
-    MatRadioModule
+    MatRadioModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -42,7 +42,7 @@ export const getChallenge = functions.https.onRequest(async (request, response) 
     // Add this challenge to the list of users challenges that the has seen/started
     if (typeof nextChallengeDoc !== 'undefined') {
       await db.doc(`users/${uid}/challenges/${nextChallengeDoc.id}`).set({
-        status: 'notStarted',
+        status: 'offered',
       } as UserChallenge);
     }
   }
@@ -61,7 +61,7 @@ export const buttonPressed = functions.https.onRequest(async (request, response)
     const doc = await challengeDoc.get();
     const data = doc.data() as UserChallenge;
 
-    if (data.status === 'notStarted') {
+    if (data.status === 'offered') {
       // Accept
       await challengeDoc.update({
         status: 'accepted',

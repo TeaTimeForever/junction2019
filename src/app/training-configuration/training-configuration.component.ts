@@ -25,6 +25,9 @@ import { Component, OnInit } from '@angular/core';
           </mat-radio-button>
         </mat-radio-group>
       </div>
+      <mat-checkbox class="example-margin">Get new challenges even if last has not yet been done</mat-checkbox>
+      <br>
+      <mat-checkbox class="example-margin">Allow my data for anonymous use</mat-checkbox>
     </form>
   </div>
   `,
