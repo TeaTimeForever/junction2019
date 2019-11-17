@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
   .logo {
+    img {
+      height: 3em;
+      object-fit: contain;
+    }
     cursor: pointer;
   }
 }
