@@ -23,7 +23,7 @@ import { trainingMock } from '../model/trainings';
   <p>Day-to-day problems affect important aspects of your life, like relationships and work, can have a big impact on your mental health. When they don’t go away, or get bigger, the emotions they cause can overwhelm you.</p>
   <mat-list #trainings>
     <mat-list-item *ngFor="let training of trainigns">
-      <a [routerLink]="training.slug">{{training.name}}</a>
+      <a routerLink="no">{{training.name}}</a>
 
     </mat-list-item>
   </mat-list>
