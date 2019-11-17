@@ -27,6 +27,7 @@ import { NoComponent } from './no/no.component';
 import { MyChallengesComponent } from './my-challenges/my-challenges.component';
 import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { HeaderComponent } from './header/header.component';
     WelcomeComponent,
     NoComponent,
     MyChallengesComponent,
-    AdminComponent
+    AdminComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
