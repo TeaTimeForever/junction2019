@@ -20,7 +20,8 @@ import { trainingMock } from '../model/trainings';
     <img *ngFor="let img of relaxImgs"
          [src]="'./assets/relax/'+img +'.svg'" [alt]="img">
   </div>
-  <p>Day-to-day problems affect important aspects of your life, like relationships and work, can have a big impact on your mental health. When they don’t go away, or get bigger, the emotions they cause can overwhelm you.</p>
+  <!--p>Day-to-day problems affect important aspects of your life, like relationships and work, can have a big impact on your mental health. When they don’t go away, or get bigger, the emotions they cause can overwhelm you.</p-->
+  <p>What you can do about anxiety? Here we we present you with a number of trainings that can help you strengthen your ability to deal with anxiety.</p>
   <mat-list #trainings>
     <mat-list-item *ngFor="let training of trainigns">
       <a [routerLink]="training.slug">{{training.name}}</a>

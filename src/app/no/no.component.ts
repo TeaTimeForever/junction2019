@@ -14,9 +14,9 @@ import { Component, OnInit } from '@angular/core';
     <li>Find out what the other side really wants</li>
     <li>Counter dirty tricks</li>
     <li>Use power to bring the other side back to the table</li>
-    <li>Reach agreements that satisfies both sides' needs</li>
+    <li>Reach agreements that satisfy both sides' needs</li>
   </ul>
-  <p>Getting to No is the challanges on negotiation for the twenty-first century. It will help you deal with tough times, tough people, and tough negotiations. You don’t have to get mad or get even. Instead, you can get what you want!</p>
+  <p>Getting to "No!" is the challenges on negotiation for the twenty-first century. It will help you deal with tough times, tough people, and tough negotiations. You don’t have to get mad or get even. Instead, you can get what you want!</p>
   <button mat-raised-button color="primary">Start</button>
 </div>
 
