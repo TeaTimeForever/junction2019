@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-no',
   template: `
 <div class="content">
-  <h2>Getting to NO</h2>
+  <h2>Getting to "No!"</h2>
   <p>We all want to get to yes, but what happens when the other person keeps saying no?</p>
   <p>How can you negotiate successfully with a stubborn boss, an irate customer, or a deceitful classmates?</p>
   <p>You’ll learn how to:</p>
