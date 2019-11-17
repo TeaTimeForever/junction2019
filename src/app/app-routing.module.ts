@@ -5,6 +5,7 @@ import { NoComponent } from './no/no.component';
 import { MyChallengesComponent } from './my-challenges/my-challenges.component';
 import { AdminComponent } from './admin/admin.component';
 import { MapComponent } from './map/map.component';
+import { TrainingConfigurationComponent } from './training-configuration/training-configuration.component';
 
 const routes: Routes = [
   { path: '', component: WelcomeComponent},
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'myChallenges', component: MyChallengesComponent},
   { path: 'administrator', component: AdminComponent},
   { path: 'map', component: MapComponent},
+  { path: 'training-config', component: TrainingConfigurationComponent }
 ];
 
 @NgModule({

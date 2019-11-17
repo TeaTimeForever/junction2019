@@ -6,6 +6,7 @@ import { Challenge } from 'functions/src/user';
   selector: 'app-admin',
   template: `
   <div class="content">
+  <h2>Getting to "NO"</h2>
   <mat-accordion>
     <mat-expansion-panel class="firstLine" hideToggle>
         <mat-expansion-panel-header>

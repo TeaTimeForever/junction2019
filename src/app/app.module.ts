@@ -20,6 +20,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatRadioModule } from '@angular/material/radio';
 
 import { environment } from 'src/environments/environment';
 import { WelcomeComponent } from './welcome/welcome.component';
@@ -28,6 +29,8 @@ import { MyChallengesComponent } from './my-challenges/my-challenges.component';
 import { AdminComponent } from './admin/admin.component';
 import { HeaderComponent } from './header/header.component';
 import { MapComponent } from './map/map.component';
+import { TrainingConfigurationComponent } from './training-configuration/training-configuration.component';
+
 
 @NgModule({
   declarations: [
@@ -37,7 +40,8 @@ import { MapComponent } from './map/map.component';
     NoComponent,
     MyChallengesComponent,
     AdminComponent,
-    MapComponent
+    MapComponent,
+    TrainingConfigurationComponent
   ],
   imports: [
     BrowserModule,
@@ -59,7 +63,8 @@ import { MapComponent } from './map/map.component';
     MatExpansionModule,
     MatChipsModule,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
