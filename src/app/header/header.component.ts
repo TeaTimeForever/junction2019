@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
     <mat-toolbar-row class="header">
       <div routerLink="" class="logo">
         <img src="./assets/logo.png" alt="">
-        
       </div>
       <a routerLink="map">Site MAP (Junction Demo)</a>
       <button mat-button class="accent" routerLink="myChallenges">Login</button>
