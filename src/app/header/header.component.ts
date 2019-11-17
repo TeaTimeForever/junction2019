@@ -5,8 +5,12 @@ import { Component, OnInit } from '@angular/core';
   template: `
   <mat-toolbar>
     <mat-toolbar-row class="header">
-      <span>Upbeat</span>
-      <button mat-button class="accent">Login</button>
+      <div routerLink="" class="logo">
+        <img src="./assets/logo.png" alt="">
+        
+      </div>
+      <a routerLink="map">Site MAP (Junction Demo)</a>
+      <button mat-button class="accent" routerLink="myChallenges">Login</button>
     </mat-toolbar-row>
   </mat-toolbar>
   `,

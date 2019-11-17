@@ -24,7 +24,7 @@ import { trainingMock } from '../model/trainings';
   <p>What you can do about anxiety? Here we we present you with a number of trainings that can help you strengthen your ability to deal with anxiety.</p>
   <mat-list #trainings>
     <mat-list-item *ngFor="let training of trainigns">
-      <a [routerLink]="training.slug">{{training.name}}</a>
+      <a routerLink="no">{{training.name}}</a>
 
     </mat-list-item>
   </mat-list>
